@@ -2,11 +2,10 @@ package com.example.despe.firebaseauthsample
 
 import android.app.Activity
 import android.content.Intent
-import android.graphics.drawable.BitmapDrawable
 import android.net.Uri
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
+import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
@@ -116,5 +115,3 @@ class RegisterActivity : AppCompatActivity() {
                 }
     }
 }
-
-class User(val uid: String, val username: String, val profileImageUri: String)
