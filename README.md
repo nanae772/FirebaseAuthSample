@@ -26,3 +26,8 @@ Firebaseの認証を用いて、ユーザ登録・ログインを試すことが
 1. LOGINボタンをクリック
 
 "Successful Login!"と画面下部に表示されればログインは成功です。
+
+### Firebase Authenticationによるユーザ登録の仕様
+
+- Emailアドレスの形式に沿ってないもので登録しようとすると弾かれます(ex. "test"など)
+- Passwordの長さは最低6文字以上無いと弾かれます(ex."1111"など)
