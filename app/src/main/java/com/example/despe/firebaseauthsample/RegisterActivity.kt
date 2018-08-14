@@ -89,12 +89,12 @@ class RegisterActivity : AppCompatActivity() {
     }
 
     private fun uploadImageToFirebaseStorage() {
-        if (selectedPhotoUri == null) return
+        val url = selectedPhotoUri ?: return
 
         val filename = UUID.randomUUID().toString()
         val ref = FirebaseStorage.getInstance().getReference("/image/$filename")
 
-        ref.putFile(selectedPhotoUri!!)
+        ref.putFile(url)
                 .addOnSuccessListener {
                     Log.d("RegisterActivity", "Successfully uploaded image: ${it.metadata?.path}")
 
