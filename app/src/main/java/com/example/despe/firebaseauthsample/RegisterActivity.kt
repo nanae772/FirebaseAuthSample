@@ -17,6 +17,8 @@ import java.util.*
 
 class RegisterActivity : AppCompatActivity() {
 
+    var selectedPhotoUri: Uri? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
@@ -39,8 +41,6 @@ class RegisterActivity : AppCompatActivity() {
         }
 
     }
-
-    var selectedPhotoUri: Uri? = null
 
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
